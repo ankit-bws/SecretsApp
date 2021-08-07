@@ -174,7 +174,10 @@ app.post("/login", function(req, res){
     });
 });
 
-const PORT = 3000 || process.env.port;
+let PORT = process.env.PORT;
+if (PORT == null || PORT == "") {
+  PORT = 3000;
+}
 app.listen(PORT, function(req, res){
     console.log("Server started successfully!");
 });

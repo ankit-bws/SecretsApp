@@ -21,5 +21,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ankit Biswas",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.4"
+  }
 }
